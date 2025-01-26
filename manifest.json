@@ -19,8 +19,12 @@
   },
   "content_scripts": [
     {
-      "matches": ["<all_urls>"],
-      "js": ["js/play_audio.js"],
+      "matches": [
+        "<all_urls>"
+      ],
+      "js": [
+        "js/play_audio.js"
+      ],
       "all_frames": true
     }
   ],
@@ -30,15 +34,19 @@
   },
   "web_accessible_resources": [
     {
-        "resources": ["images/*"],
-        "matches": ["<all_urls>"]
+      "resources": [
+        "images/*"
+      ],
+      "matches": [
+        "<all_urls>"
+      ]
     }
   ],
   "commands": {
     "read_the_selected_text": {
       "suggested_key": {
-        "default": "Ctrl+Shift+1",
-        "mac": "MacCtrl+Shift+1"
+        "default": "Ctrl+Shift+S",
+        "mac": "Command+Shift+S"
       },
       "description": "Read the selected text in Speechy"
     }
